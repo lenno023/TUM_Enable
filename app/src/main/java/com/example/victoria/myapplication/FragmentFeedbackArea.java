@@ -28,7 +28,7 @@ public class FragmentFeedbackArea extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstaceState)
     {
-        View v = inflater.inflate(R.layout.layout_feedback_area, container, false); //a true would show the layout now, we are doing thsi in the ActivityOrderingScreen
+        View v = inflater.inflate(R.layout.layout_fragment_feedback_area, container, false); //a true would show the layout now, we are doing thsi in the ActivityOrderingScreen
 
         Log.d("FragmentFeedbackArea", "Standard Version");
         return v;
