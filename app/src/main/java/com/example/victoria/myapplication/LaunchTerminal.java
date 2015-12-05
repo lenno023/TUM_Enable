@@ -30,7 +30,7 @@ public class LaunchTerminal extends FragmentActivity {
 
 
         FragmentManager fm = getFragmentManager();
-        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+        Fragment fragment = fm.findFragmentById(R.id.fragment_standard);
 
             if (fragment==null){
 
@@ -47,7 +47,7 @@ public class LaunchTerminal extends FragmentActivity {
                     default:
                         fragment = new WelcomeStandardVersion();
                 }
-                    fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
+                    fm.beginTransaction().add(R.id.fragment_standard, fragment).commit();
             }
     }
 }

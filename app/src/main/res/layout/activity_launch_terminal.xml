@@ -1,8 +1,30 @@
-<FrameLayout
+<LinearLayout
+    android:id="@+id/layout_launchTerminal"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/fragment_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</FrameLayout>
- <!-- This Layout will be the Container for several Fragments -->
+    <FrameLayout
+        android:id="@+id/fragment_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_nudging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#228b22">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_standard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+</LinearLayout>
+    <!-- This Layout will be the Container for several Fragments -->
