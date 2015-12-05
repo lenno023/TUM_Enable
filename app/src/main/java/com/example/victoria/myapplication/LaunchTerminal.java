@@ -29,7 +29,7 @@ public class LaunchTerminal extends FragmentActivity {
         mSelectedVersion=getIntent().getStringExtra("SELECTED_VERSION");
 
 
-        FragmentManager fm= getFragmentManager();
+        FragmentManager fm = getFragmentManager();
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
 
             if (fragment==null){
@@ -38,7 +38,7 @@ public class LaunchTerminal extends FragmentActivity {
                     case "AvatarOnly":
                         fragment = new WelcomeAvatarOnly();
                         break;
-                    case "NudingOnly":
+                    case "NudgingOnly":
                         fragment = new WelcomeNudgingOnly();
                         break;
                     case "CombinedVersion":
@@ -49,8 +49,5 @@ public class LaunchTerminal extends FragmentActivity {
                 }
                     fm.beginTransaction().add(R.id.fragment_container, fragment).commit();
             }
-
-
-
     }
 }
