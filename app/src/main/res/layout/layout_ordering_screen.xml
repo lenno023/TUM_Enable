@@ -1,3 +1,5 @@
+<!-- This layout will be the container for several fragments -->
+
 <LinearLayout
     android:id="@+id/layout_launchTerminal"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -6,25 +8,24 @@
     android:orientation="vertical">
 
     <FrameLayout
-        android:id="@+id/fragment_status"
+        android:id="@+id/fragmentContainer_feedback_area"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
     </FrameLayout>
 
     <FrameLayout
-        android:id="@+id/fragment_nudging"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:background="#228b22">
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/fragment_standard"
+        android:id="@+id/fragmentContainer_healthy_product_area"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1">
     </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer_unhealthy_product_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
 </LinearLayout>
-    <!-- This Layout will be the Container for several Fragments -->
